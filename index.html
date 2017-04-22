@@ -1,27 +1,39 @@
 <!doctype html>
-<html class="no-js" lang="">
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
     <title>bootstrapbook</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link  href="apple-touch-icon.png" rel="apple-touch-icon">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/__main.css">
+    <link  href="css/__main.css" rel="stylesheet">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!--for IE 8-->
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
 </head>
 <body>
-<!--[if lt IE 8]>
+<!--[if lt IE 7]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <header role="banner">
     <div class="container">
-        <a class="banner-brand visible-md visible-lg" href="index.html"><img src="img/logo.png" alt="" width="180"></a>
+        <div class="banner-brand visible-md visible-lg">
+        <a href="index.html"><img src="img/logo.png" alt="" width="180"></a>
+        </div>
         <div class="utility-nav">
             <ul>
                 <li><a href="#" title="Login or Register"><i
@@ -137,6 +149,7 @@
     </nav>
 </header>
 
+<div class="clearfix visible-sm"></div>
 <main role="main">
     <div class="container">
         <div class="row">
@@ -189,7 +202,7 @@
                     <p><a class="btn btn-primary pull-right" href="#">查看更多 <span
                         class="icon fa fa-arrow-circle-right"></span></a></p>
                 </div>
-                <div >
+                <div>
                     <h3>Recent Updates</h3>
                     <p>Suspendisse et arcu felis, ac gravida turpis. Suspendisse potenti. Ut porta rhoncus ligula, sed
                         fringilla felis feugiat eget. In non purus quis elit iaculis tincidunt. Donec at ultrices
@@ -197,7 +210,7 @@
                     <p><a class="btn btn-primary pull-right" href="#">查看更多 <span
                         class="icon fa fa-arrow-circle-right"></span></a></p>
                 </div>
-                <div >
+                <div>
                     <h3>And another thing</h3>
                     <p>Suspendisse et arcu felis, ac gravida turpis. Suspendisse potenti. Ut porta rhoncus ligula, sed
                         fringilla felis feugiat eget. In non purus quis elit iaculis tincidunt. Donec at ultrices
@@ -207,7 +220,7 @@
                 </div>
             </section>
             <section class="content-tertiary col-md-3">
-                <div >
+                <div>
                     <h4>Don't Miss!</h4>
                     <p>Suspendisse et arcu felis, ac gravida turpis. Suspendisse potenti. Ut porta rhoncus ligula, sed
                         fringilla felis feugiat eget. In non purus quis elit iaculis tincidunt. Donec at ultrices
@@ -238,6 +251,53 @@
 
 <footer role="contentinfo">
     <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-2">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Pets</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-2">
+                <h3>Styles</h3>
+                <ul>
+                    <li><a href="#">Athletic</a></li>
+                    <li><a href="#">Casual</a></li>
+                    <li><a href="#">Dress</a></li>
+                    <li><a href="#">Everyday</a></li>
+                    <li><a href="#">Other Days</a></li>
+                    <li><a href="#">Alternative</a></li>
+                    <li><a href="#">Otherwise</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-2">
+                <h3>Other</h3>
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Another link</a></li>
+                    <li><a href="#">Link again</a></li>
+                    <li><a href="#">Try this</a></li>
+                    <li><a href="#">Don't you dare</a></li>
+                    <li><a href="#">Oh go ahead</a></li>
+                </ul>
+            </div>
+            <div class="about col-sm-12 col-md-6">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod congue bibendum. Aliquam
+                    erat volutpat. Phasellus eget justo lacus. Vivamus pharetra ullamcorper massa, nec ultricies metus
+                    gravida egestas. Duis congue viverra arcu, ac aliquet turpis rutrum a. Donec semper vestibulum
+                    dapibus. Integer et sollicitudin metus. Vivamus at nisi turpis. Phasellus vel tellus id felis cursus
+                    hendrerit.</p>
+                <p><a class="btn btn-default pull-right" href="#">learn more <span
+                    class="icon fa fa-arrow-circle-right"></span></a></p>
+            </div>
+        </div>
         <ul class="social">
             <li><a href="#" title="Twitter Profile"><span class="icon fa fa-twitter"></span></a></li>
             <li><a href="#" title="Facebook Page"><span class="icon fa fa-facebook"></span></a></li>
@@ -245,7 +305,6 @@
             <li><a href="#" title="Google+ Profile"><span class="icon fa fa-google-plus"></span></a></li>
             <li><a href="#" title="GitHub Profile"><span class="icon fa fa-github-alt"></span></a></li>
         </ul>
-
         <p class="footer-brand"><a href="index.html"><img src="img/logo.png" alt="" width="80"></a></p>
     </div><!-- /.container -->
 </footer>
