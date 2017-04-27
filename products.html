@@ -157,9 +157,10 @@
     <div class="row">
       <div class="grid-options col-sm-3">
 
-        <h2>缩小选择范围</h2>
-
-        <a class="choose-clearance" href="#">
+        <h2 class="clearfix">缩小选择范围 <button type="button" class="options-panel-toggle btn btn-primary pull-right" data-toggle="collapse" data-target="#options-panel"><span class="icon fa fa-cog fa-2x"></span></button></h2>
+        <div id="options-panel" class="options-panel collapse">
+        <a class="btn btn-feature choose-clearance " href="#">
+            <span class="icon fa fa-tag fa-3x"></span>
           <h3>清仓大甩卖</h3>
           <p>查看打折物品</p>
         </a>
@@ -205,7 +206,7 @@
           <li><a href="#">Option 9</a></li>
           <li><a href="#">Option 10</a></li>
         </ul>
-
+        </div><!--options-panel-->
       </div><!-- /.products-grid-options -->
       <div class="products-grid col-sm-9">
         <div class="row">
