@@ -5874,7 +5874,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   float: left;
   margin-left: 15px;
-  padding: 28px 10px;
+  padding: 24px 10px;
   margin-top: 0px;
   margin-bottom: 0px;
   background-color: transparent;
@@ -8196,14 +8196,10 @@ header[role="banner"] .utility-nav > ul > li > a:hover {
     background-color: transparent;
   }
 }
-@media (max-width: 767px) {
-  [class*="col-"] {
-    clear: both;
-  }
-}
 main {
   padding-top: 20px;
   padding-bottom: 40px;
+  background-color: #f2f2f2;
 }
 main [class*="col-"] h1,
 main [class*="col-"] h2,
@@ -8283,6 +8279,12 @@ footer[role="contentinfo"] ul {
 footer[role="contentinfo"] .footer-brand {
   text-align: center;
 }
+@media (max-width: 767px) {
+  footer[role="contentinfo"] .row > div > ul > li {
+    padding-top: 10px;
+    padding-left: 0;
+  }
+}
 .pagination-wrap {
   text-align: center;
 }
@@ -8290,6 +8292,18 @@ footer[role="contentinfo"] .footer-brand {
   padding-bottom: 32px;
   height: 360px;
   overflow: hidden;
+}
+@media (max-width: 1199px) {
+  .product-item {
+    padding-bottom: 32px;
+    height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .product-item {
+    padding-bottom: 32px;
+    height: 340px;
+  }
 }
 .product-item img {
   width: 100%;
@@ -8317,6 +8331,7 @@ footer[role="contentinfo"] .footer-brand {
   padding-top: 12px;
   padding-bottom: 24px;
   max-width: 480px;
+  position: relative;
 }
 .grid-options > .list-group,
 .grid-options > .panel-collapse > .list-group {
@@ -8499,11 +8514,26 @@ footer[role="contentinfo"] .footer-brand {
 .grid-options > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #dddddd;
 }
+@media (max-width: 767px) {
+  .grid-options {
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+  }
+}
 .grid-options > h2 {
   margin-top: 0;
   font-size: 25.5px;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #454545;
+  margin-bottom: 20px;
+  padding-left: 18px;
+  position: relative;
+}
+.grid-options > h2 > button {
+  position: absolute;
+  right: 20px;
 }
 .grid-options > h3 {
   font-size: 17px;
@@ -8650,6 +8680,11 @@ fieldset[disabled] a.grid-options .options-list li a {
   }
   .options-panel-toggle {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .options-panel {
+    padding-top: 10px;
   }
 }
 .clearfix:before,
